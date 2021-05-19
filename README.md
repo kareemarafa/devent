@@ -1,2 +1,1 @@
-## D-Event
-### React.js Application
+## D-Event Control Panel
