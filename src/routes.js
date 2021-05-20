@@ -1,6 +1,5 @@
-
 import Dashboard from "views/Dashboard.js";
-import UserProfile from "views/UserProfile.js";
+import ManageNotification from "views/ManageNotification.js";
 import TableList from "views/TableList.js";
 import Typography from "views/Typography.js";
 import Icons from "views/Icons.js";
@@ -16,10 +15,10 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
-    path: "/user",
+    path: "/manage-notification",
     name: "Manage Notifications",
     icon: "nc-icon nc-circle-09",
-    component: UserProfile,
+    component: ManageNotification,
     layout: "/admin",
   },
   {

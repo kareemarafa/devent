@@ -4,6 +4,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.2",
     "bootstrap": "4.6.0",
+    "bootstrap-switch-button-react": "^1.2.0",
     "chartist": "0.10.1",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",

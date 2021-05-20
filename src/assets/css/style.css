@@ -1,0 +1,44 @@
+.padding-top-10 {
+    padding-top: 4px;
+}
+
+.color-light-grey {
+    color: #888888
+}
+
+.btn-primary {
+    background-color: #7760D5;
+    border-color: #7760D5;
+    border-width: 1px;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #7760D5;
+    border-color: #7760D5;
+    border-width: 1px;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #eee;
+    border-color: #eee;
+    border-width: 1px;
+}
+
+.btn-secondary:hover {
+    background-color: #eee;
+    border-color: #eee;
+    border-width: 1px;
+}
+
+.switch-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form-check-label {
+    padding-left: 0 !important;
+}
