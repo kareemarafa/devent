@@ -3,7 +3,7 @@ import React from "react";
 // react-bootstrap components
 import { Badge, Button, Navbar, Nav, Container } from "react-bootstrap";
 
-function Maps() {
+function AdminWallet() {
   const mapRef = React.useRef(null);
   React.useEffect(() => {
     let google = window.google;
@@ -48,4 +48,4 @@ function Maps() {
   );
 }
 
-export default Maps;
+export default AdminWallet;

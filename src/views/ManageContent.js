@@ -12,7 +12,7 @@ import {
   Col,
 } from "react-bootstrap";
 
-function Typography() {
+function ManageContent() {
   return (
     <>
       <Container fluid>
@@ -144,4 +144,4 @@ function Typography() {
   );
 }
 
-export default Typography;
+export default ManageContent;

@@ -1,10 +1,10 @@
 import Dashboard from "views/Dashboard.js";
 import ManageNotification from "views/ManageNotification.js";
 import ManageEmail from "views/ManageEmail.js";
-import Typography from "views/Typography.js";
-import Icons from "views/Icons.js";
-import Maps from "views/Maps.js";
-import Notifications from "views/Notifications.js";
+import ManageContent from "views/ManageContent.js";
+import ExploreBlockchain from "views/ExploreBlockchain.js";
+import AdminWallet from "views/AdminWallet.js";
+import Security from "views/Security.js";
 
 const dashboardRoutes = [
   {
@@ -29,31 +29,31 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
-    path: "/typography",
+    path: "/manage-content",
     name: "Manage Content",
     icon: "nc-icon nc-paper-2",
-    component: Typography,
+    component: ManageContent,
     layout: "/admin",
   },
   {
-    path: "/icons",
+    path: "/explore-blockchain",
     name: "Explore Blockchain",
     icon: "nc-icon nc-atom",
-    component: Icons,
+    component: ExploreBlockchain,
     layout: "/admin",
   },
   {
-    path: "/maps",
+    path: "/admin-wallet",
     name: "Admin Wallet",
     icon: "nc-icon nc-pin-3",
-    component: Maps,
+    component: AdminWallet,
     layout: "/admin",
   },
   {
-    path: "/notifications",
+    path: "/security",
     name: "Security",
     icon: "nc-icon nc-bell-55",
-    component: Notifications,
+    component: Security,
     layout: "/admin",
   },
 ];

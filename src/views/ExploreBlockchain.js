@@ -1,6 +1,5 @@
 import React from "react";
 
-// react-bootstrap components
 import {
   Badge,
   Button,
@@ -12,7 +11,7 @@ import {
   Col,
 } from "react-bootstrap";
 
-function Icons() {
+function ExploreBlockchain() {
   return (
     <>
       <Container fluid>
@@ -638,4 +637,4 @@ function Icons() {
   );
 }
 
-export default Icons;
+export default ExploreBlockchain;
