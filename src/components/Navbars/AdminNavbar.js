@@ -1,7 +1,7 @@
 
-import React, { Component } from "react";
+import React from "react";
 import { useLocation } from "react-router-dom";
-import {Navbar, Container, Nav, Dropdown, Button, Form} from "react-bootstrap";
+import {Navbar, Container, Nav, Dropdown, Button} from "react-bootstrap";
 
 import routes from "routes.js";
 
@@ -10,7 +10,7 @@ function Header() {
   const mobileSidebarToggle = (e) => {
     e.preventDefault();
     document.documentElement.classList.toggle("nav-open");
-    var node = document.createElement("div");
+    const node = document.createElement("div");
     node.id = "bodyClick";
     node.onclick = function () {
       this.parentElement.removeChild(this);
@@ -25,7 +25,7 @@ function Header() {
         return routes[i].name;
       }
     }
-    return "Brand";
+    return "Undefined";
   };
   return (
     <Navbar bg="light" expand="lg">
@@ -135,11 +135,7 @@ function Header() {
           </Nav>
           <Nav className="ml-auto" navbar>
             <Nav.Item>
-              <Nav.Link
-                className="m-0"
-                href="#pablo"
-                onClick={(e) => e.preventDefault()}
-              >
+              <Nav.Link className="m-0" href="/admin/account-settings">
                 <span className="no-icon">Account</span>
               </Nav.Link>
             </Nav.Item>

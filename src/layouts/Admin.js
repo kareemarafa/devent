@@ -8,6 +8,8 @@ import Sidebar from "components/Sidebar/Sidebar";
 import routes from "routes.js";
 
 import sidebarImage from "assets/img/sidebar-3.jpg";
+import FixedPlugin from "../components/FixedPlugin/FixedPlugin";
+import AccountSettings from "../views/AccountSettings";
 
 function Admin() {
   const [image, setImage] = React.useState(sidebarImage);

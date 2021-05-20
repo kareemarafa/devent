@@ -25,17 +25,14 @@ function Sidebar({ color, image, routes }) {
         </div>
         <Nav>
           {routes.map((prop, key) => {
-            if (!prop.redirect)
+            if (!prop.redirect && prop.sideMenu)
               return (
                 <li
-                  className={activeRoute(prop.layout + prop.path)}
-                  key={key}
-                >
+                  className={activeRoute(prop.layout + prop.path)} key={key}>
                   <NavLink
                     to={prop.layout + prop.path}
                     className="nav-link"
-                    activeClassName="active"
-                  >
+                    activeClassName="active">
                     <i className={prop.icon} />
                     <p>{prop.name}</p>
                   </NavLink>
