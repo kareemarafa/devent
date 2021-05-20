@@ -1,6 +1,6 @@
 import Dashboard from "views/Dashboard.js";
 import ManageNotification from "views/ManageNotification.js";
-import TableList from "views/TableList.js";
+import ManageEmail from "views/ManageEmail.js";
 import Typography from "views/Typography.js";
 import Icons from "views/Icons.js";
 import Maps from "views/Maps.js";
@@ -22,10 +22,10 @@ const dashboardRoutes = [
     layout: "/admin",
   },
   {
-    path: "/table",
+    path: "/manage-email",
     name: "Manage Emails",
     icon: "nc-icon nc-notes",
-    component: TableList,
+    component: ManageEmail,
     layout: "/admin",
   },
   {
