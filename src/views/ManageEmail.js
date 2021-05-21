@@ -1,156 +1,196 @@
 import React from "react";
-
 import {
-  Card,
-  Table,
-  Container,
-  Row,
-  Col,
+    Button,
+    Card,
+    Form,
+    Container,
+    Row,
+    Col,
 } from "react-bootstrap";
+import '../assets/css/style.css';
+import BootstrapSwitchButton from 'bootstrap-switch-button-react'
 
-function ManageEmail() {
-  return (
-    <>
-      <Container fluid>
-        <Row>
-          <Col md="12">
-            <Card className="strpied-tabled-with-hover">
-              <Card.Header>
-                <Card.Title as="h4">Striped Table with Hover</Card.Title>
-                <p className="card-category">
-                  Here is a subtitle for this table
-                </p>
-              </Card.Header>
-              <Card.Body className="table-full-width table-responsive px-0">
-                <Table className="table-hover table-striped">
-                  <thead>
-                    <tr>
-                      <th className="border-0">ID</th>
-                      <th className="border-0">Name</th>
-                      <th className="border-0">Salary</th>
-                      <th className="border-0">Country</th>
-                      <th className="border-0">City</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>Dakota Rice</td>
-                      <td>$36,738</td>
-                      <td>Niger</td>
-                      <td>Oud-Turnhout</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Minerva Hooper</td>
-                      <td>$23,789</td>
-                      <td>Curaçao</td>
-                      <td>Sinaai-Waas</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Sage Rodriguez</td>
-                      <td>$56,142</td>
-                      <td>Netherlands</td>
-                      <td>Baileux</td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Philip Chaney</td>
-                      <td>$38,735</td>
-                      <td>Korea, South</td>
-                      <td>Overland Park</td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>Doris Greene</td>
-                      <td>$63,542</td>
-                      <td>Malawi</td>
-                      <td>Feldkirchen in Kärnten</td>
-                    </tr>
-                    <tr>
-                      <td>6</td>
-                      <td>Mason Porter</td>
-                      <td>$78,615</td>
-                      <td>Chile</td>
-                      <td>Gloucester</td>
-                    </tr>
-                  </tbody>
-                </Table>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md="12">
-            <Card className="card-plain table-plain-bg">
-              <Card.Header>
-                <Card.Title as="h4">Table on Plain Background</Card.Title>
-                <p className="card-category">
-                  Here is a subtitle for this table
-                </p>
-              </Card.Header>
-              <Card.Body className="table-full-width table-responsive px-0">
-                <Table className="table-hover">
-                  <thead>
-                    <tr>
-                      <th className="border-0">ID</th>
-                      <th className="border-0">Name</th>
-                      <th className="border-0">Salary</th>
-                      <th className="border-0">Country</th>
-                      <th className="border-0">City</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>Dakota Rice</td>
-                      <td>$36,738</td>
-                      <td>Niger</td>
-                      <td>Oud-Turnhout</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>Minerva Hooper</td>
-                      <td>$23,789</td>
-                      <td>Curaçao</td>
-                      <td>Sinaai-Waas</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Sage Rodriguez</td>
-                      <td>$56,142</td>
-                      <td>Netherlands</td>
-                      <td>Baileux</td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Philip Chaney</td>
-                      <td>$38,735</td>
-                      <td>Korea, South</td>
-                      <td>Overland Park</td>
-                    </tr>
-                    <tr>
-                      <td>5</td>
-                      <td>Doris Greene</td>
-                      <td>$63,542</td>
-                      <td>Malawi</td>
-                      <td>Feldkirchen in Kärnten</td>
-                    </tr>
-                    <tr>
-                      <td>6</td>
-                      <td>Mason Porter</td>
-                      <td>$78,615</td>
-                      <td>Chile</td>
-                      <td>Gloucester</td>
-                    </tr>
-                  </tbody>
-                </Table>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
-    </>
-  );
+function ManageNotification() {
+    return (
+        <>
+            <Container fluid>
+                <Row>
+                    <Col>
+                        <h4 className="color-light-grey">Create New Notification Rule</h4>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md="12">
+                        <Card>
+                            <Card.Body>
+                                <Form>
+                                    <Row>
+                                        <Col className="pr-1" md="2">
+                                            <Form.Group controlId="formActionInput">
+                                                <Form.Label>Trigger Action*</Form.Label>
+                                                <Form.Control as="select" custom>
+                                                    <option>Select</option>
+                                                </Form.Control>
+                                            </Form.Group>
+                                        </Col>
+                                        <Col className="pr-1" md="6">
+                                            <Form.Group controlId="formTitleInput">
+                                                <Form.Label>Email Title*</Form.Label>
+                                                <Form.Control type="text" placeholder="Title..."/>
+                                            </Form.Group>
+                                        </Col>
+                                        <Col className="pr-1" md="2">
+                                            <Form.Group controlId="formActionInput">
+                                                <Form.Label>User Type*</Form.Label>
+                                                <Form.Control as="select" custom>
+                                                    <option>Select</option>
+                                                </Form.Control>
+                                            </Form.Group>
+                                        </Col>
+                                        <Col className="pr-3" md="2">
+                                            <Form.Group controlId="formActionInput">
+                                                <Form.Label>Device*</Form.Label>
+                                                <Form.Control as="select" custom>
+                                                    <option>Select</option>
+                                                </Form.Control>
+                                            </Form.Group>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col className="pr-1" md="6">
+                                            <Form.Group controlId="exampleForm.ControlTextarea1">
+                                                <Form.Label>Your Message (max 30 words)</Form.Label>
+                                                <Form.Control className="text-area" as="textarea" rows={4}/>
+                                            </Form.Group>
+                                        </Col>
+                                        <Col className="pr-1" md={{ span: 5, offset: 1 }}>
+                                            <Form.Group className="m-0">
+                                                <Form.Label>Trigger policy*</Form.Label>
+                                            </Form.Group>
+                                            <div>
+                                                <Form.Check
+                                                    type="radio"
+                                                    id="default-radio1"
+                                                    name="policy"
+                                                    label="Send now (no specific action from user)"
+                                                />
+                                                <Form.Check
+                                                    type="radio"
+                                                    id="default-radio2"
+                                                    name="policy"
+                                                    label="Send at first action time"
+                                                />
+                                                <Form.Check
+                                                    type="radio"
+                                                    id="default-radio3"
+                                                    name="policy"
+                                                    label="Send at each action time"
+                                                />
+                                                <Form.Check
+                                                    type="radio"
+                                                    id="default-radio4"
+                                                    name="policy"
+                                                    label="Send {Hours} after action time"
+                                                />
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col className="pr-1 ml-auto button-container" md={{ span: 3, offset: 2 }}>
+                                            <Button className="margin-right-2" variant="primary">
+                                                Add Rule
+                                                <i className="fas fa-plus"/>
+                                            </Button>
+                                        </Col>
+                                    </Row>
+                                </Form>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+            </Container>
+
+            <Container fluid>
+                <Row>
+                    <Col>
+                        <h4 className="color-light-grey">Active Rule</h4>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md="12">
+                        <Card>
+                            <Card.Body>
+                                <Form>
+                                    <Row>
+                                        <Col className="pr-1" md="2">
+                                            <Form.Group controlId="formActionInput">
+                                                <Form.Label>Trigger Action*</Form.Label>
+                                                <Form.Control as="select" custom>
+                                                    <option>Select</option>
+                                                </Form.Control>
+                                            </Form.Group>
+                                        </Col>
+                                        <Col className="pr-1" md="6">
+                                            <Form.Group controlId="formTitleInput">
+                                                <Form.Label>Email Title*</Form.Label>
+                                                <Form.Control type="text" placeholder="Title..."/>
+                                            </Form.Group>
+                                        </Col>
+                                        <Col className="pr-1" md="2">
+                                            <Form.Group controlId="formActionInput">
+                                                <Form.Label>User Type*</Form.Label>
+                                                <Form.Control as="select" custom>
+                                                    <option>Select</option>
+                                                </Form.Control>
+                                            </Form.Group>
+                                        </Col>
+                                        <Col className="pr-3" md="2">
+                                            <Form.Group controlId="formActionInput">
+                                                <Form.Label>Device*</Form.Label>
+                                                <Form.Control as="select" custom>
+                                                    <option>Select</option>
+                                                </Form.Control>
+                                            </Form.Group>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col className="pr-1" md="6">
+                                            <Form.Group controlId="exampleForm.ControlTextarea1">
+                                                <Form.Label>Your Message (max 30 words)</Form.Label>
+                                                <p className="text-secondary">message here message here message here message here</p>
+                                            </Form.Group>
+                                        </Col>
+                                        <Col className="pr-1" md={{ span: 5, offset: 1 }}>
+                                            <Form.Group className="m-0">
+                                                <Form.Label>Trigger policy*</Form.Label>
+                                            </Form.Group>
+                                            <div>
+                                                <Form.Check
+                                                    type="radio"
+                                                    id="default-radio1"
+                                                    name="policy"
+                                                    label="Send {Hours} after action time"
+                                                />
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col className="pr-3 button-container ml-auto" md={{ span: 3, offset: 2 }}>
+                                            <Button className="margin-right-2" variant="primary">
+                                                Edit Rule
+                                                <i className="fas fa-pen margin-left-1"/>
+                                            </Button>
+                                            <Button variant="danger border-0"><i className="fas fa-trash-alt"/></Button>
+                                        </Col>
+                                    </Row>
+                                </Form>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+            </Container>
+        </>
+    );
 }
 
-export default ManageEmail;
+export default ManageNotification;

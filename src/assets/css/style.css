@@ -61,3 +61,15 @@
     justify-content: flex-end;
     margin-top: 10px;
 }
+.form-control{
+    background-color: #7760D5;
+}
+.text-area{
+    background-color: #fff;
+color: #fff;
+
+}
+.custom-select{
+    background-color: #7760D5;
+color: #fff;
+}
