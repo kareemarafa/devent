@@ -1,6 +1,5 @@
 import React from "react";
-import {Button, Card, Col, Container, Form, Row} from "react-bootstrap";
-import BootstrapSwitchButton from "bootstrap-switch-button-react";
+import {Card, Col, Container, Form, Row} from "react-bootstrap";
 import UserRow from "../components/User/UserRow";
 
 function Security() {
