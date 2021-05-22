@@ -62,88 +62,90 @@
     justify-content: flex-end;
     margin-top: 10px;
 }
-.form-control{
+
+.form-control {
     background-color: #7760D5;
 }
-.text-area{
+
+.text-area {
     background-color: #fff;
-color: #fff;
+    color: #fff;
 
 }
-.custom-select{
+
+.custom-select {
     background-color: #7760D5;
-color: #fff;
+    color: #fff;
 }
 
-/*style Explore-Blockchain page*/
-.card{
-
+.card {
+    padding: 0 15px;
 }
-.card .card-body{
+
+.card .card-body {
     display: contents;
 }
-.card .card-body .border-style{
+
+.card .card-body .border-style {
     margin: auto;
     width: 100%
 }
+
 .card .card-body .muted {
     font-size: 8px;
 }
+
 .card .card-body .text {
-font-size: 11px;
+    font-size: 11px;
 }
+
 /**/
 .css-chart {
-    /* border-bottom: 1px solid;
-    border-left: 1px solid; */
     display: inline-block;
-    /* height: var(--widget-size); */
     margin: 5em 15em 1em 5em;
     padding: 0;
     position: relative;
-    /* width: var(--widget-size); */
     color: #444;
-  }
-  
-  .line-chart {
+}
+
+.line-chart {
     list-style: none;
     margin: 0;
     padding: 0;
-  }
-  
-  .data-point {
+}
+
+.data-point {
     background-color: #444;
     border: 2px solid #444;
     border-radius: 50%;
-    bottom: calc(var(--y) - 8px);
     height: 12px;
-    left: calc(var(--x) - 8px);
     position: absolute;
     width: 12px;
     z-index: 1;
-  }
-  
-  .line-segment {
+}
+
+.line-segment {
     background-color: #444;
-    bottom: var(--y);
     height: 3px;
-    left: var(--x);
     position: absolute;
-    transform: rotate(calc(var(--angle) * 1deg));
     transform-origin: left bottom;
-    width: calc(var(--hypotenuse) * 1px);
-  }
-  .btn-light{
-    background-color: #fff !important; border: none !important;
+}
+
+.btn-light {
+    background-color: #fff !important;
+    border: none !important;
     padding: 20px;
-  }
-  .search{
+}
+
+.search {
     padding: 30px;
-  }
-  .form{
-      position: relative;
-  }
-  .nc-zoom-split{
+}
+
+.form {
+    position: relative;
+}
+
+.nc-zoom-split {
     position: absolute;
     right: 0px;
     top: 0;
@@ -155,57 +157,70 @@ font-size: 11px;
     color: #fff;
     font-weight: bold;
     height: 61px;
-  }
-  .form-group{
-      width: 100%;
-  }
-  .all-filters{
-      background-color: #fff;
-      display: flex;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.all-filters {
+    background-color: #fff;
+    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-  }
-  .input-search{
+}
+
+.input-search {
     height: 70px
-  }
-  .first-table, .second-table{
+}
+
+.first-table, .second-table {
     text-align: left;
     margin: 10px 10px;
-  }
-  .main-icon{
-    margin: auto;
-    margin-left: 24px;
-  }
-  .tables{
-    display: contents;
-    /* font-size: 14px; */
-  }
+}
 
-  .tables span{
-      display: block;
-  }
-  .tables p{
-      color: #7760D5;
-      display: contents;
-  }
-  .head{
+.main-icon {
+    width: 50px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tables {
+    display: contents;
+}
+
+.tables span {
+    display: block;
+}
+
+.tables p {
+    color: #7760D5;
+    display: contents;
+}
+
+.head {
     display: table-caption;
     width: max-content;
     margin: 18px 0 10px 10px;
 }
-  .first-table{
-      background-color: #fff;
-  }
-.second-table{
+
+.first-table {
+    background-color: #fff;
+}
+
+.second-table {
     background-color: #fff;
 
 }
-.background-color-grey-icon{
+
+.background-color-grey-icon {
     background-color: #f3f1f1;
     border-radius: 8px;
     text-align: center;
     display: block;
-    margin: 10px 0 0 10px;  
+    margin: 10px 0 0 10px;
     max-width: fit-content;
 }

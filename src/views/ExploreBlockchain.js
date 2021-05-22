@@ -47,7 +47,7 @@ function ExploreBlockchain() {
                                 <Card>
                                     <Card.Body>
                                         <Row>
-                                            <Col md="0" className="main-icon margin-top-4 margin-left-4">
+                                            <Col md="0" className="main-icon margin-top-4 margin-left-2">
                                                 <i className="nc-icon nc-chart-pie-35"/>
                                             </Col>
                                             <Col className="margin-top-2 second-table">
@@ -55,7 +55,7 @@ function ExploreBlockchain() {
                                                 <p className="text">$1,7.40 @ 0.01 BTC<span
                                                 >(-2.07%)</span></p>
                                             </Col>
-                                            <Col md="0" className="main-icon margin-top-4 margin-left-4">
+                                            <Col md="0" className="main-icon margin-top-4 margin-left-2">
                                                 <i className="nc-icon nc-chart-pie-35"/>
                                             </Col>
                                             <Col className="margin-top-2 second-table">
