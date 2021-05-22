@@ -223,6 +223,10 @@
     max-width: fit-content;
 }
 
+.background-light-grey {
+    background-color: #E6E6E6;
+}
+
 .card-sub-header {
     padding: 15px 0 0 15px;
 }
@@ -235,4 +239,25 @@
     padding: 20px 0;
     display: flex;
     justify-content: flex-end;
+}
+
+.cell {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.cell-head {
+    text-decoration: underline;
+}
+
+.border-radius-half {
+    border-radius: 5px;
+}
+
+.actions-col {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
