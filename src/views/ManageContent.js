@@ -15,7 +15,7 @@ function ManageContent() {
           <Col md="12">
             <Card>
               <Card.Header>
-                <Card.Title as="h4">Soon</Card.Title>
+                <Card.Title as="h4">In Progress</Card.Title>
               </Card.Header>
             </Card>
           </Col>
