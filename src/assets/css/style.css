@@ -18,6 +18,7 @@
     color: #888888
 }
 
+
 .btn-primary {
     background-color: #7760D5;
     border-color: #7760D5;
@@ -61,17 +62,150 @@
     justify-content: flex-end;
     margin-top: 10px;
 }
-
-.form-control {
+.form-control{
     background-color: #7760D5;
 }
+.text-area{
+    background-color: #fff;
+color: #fff;
 
-.text-area {
-    background-color: #ffffff;
-    color: #fff;
+}
+.custom-select{
+    background-color: #7760D5;
+color: #fff;
 }
 
-.custom-select {
-    background-color: #7760D5;
+/*style Explore-Blockchain page*/
+.card{
+
+}
+.card .card-body{
+    display: contents;
+}
+.card .card-body .border-style{
+    margin: auto;
+    width: 100%
+}
+.card .card-body .muted {
+    font-size: 8px;
+}
+.card .card-body .text {
+font-size: 11px;
+}
+/**/
+.css-chart {
+    /* border-bottom: 1px solid;
+    border-left: 1px solid; */
+    display: inline-block;
+    /* height: var(--widget-size); */
+    margin: 5em 15em 1em 5em;
+    padding: 0;
+    position: relative;
+    /* width: var(--widget-size); */
+    color: #444;
+  }
+  
+  .line-chart {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .data-point {
+    background-color: #444;
+    border: 2px solid #444;
+    border-radius: 50%;
+    bottom: calc(var(--y) - 8px);
+    height: 12px;
+    left: calc(var(--x) - 8px);
+    position: absolute;
+    width: 12px;
+    z-index: 1;
+  }
+  
+  .line-segment {
+    background-color: #444;
+    bottom: var(--y);
+    height: 3px;
+    left: var(--x);
+    position: absolute;
+    transform: rotate(calc(var(--angle) * 1deg));
+    transform-origin: left bottom;
+    width: calc(var(--hypotenuse) * 1px);
+  }
+  .btn-light{
+    background-color: #fff !important; border: none !important;
+    padding: 20px;
+  }
+  .search{
+    padding: 30px;
+  }
+  .form{
+      position: relative;
+  }
+  .nc-zoom-split{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    line-height: 2;
+    font-size: 30px;
+    background: #007eff82;
+    width: 60px;
+    text-align: center;
     color: #fff;
+    font-weight: bold;
+    height: 61px;
+  }
+  .form-group{
+      width: 100%;
+  }
+  .all-filters{
+      background-color: #fff;
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .input-search{
+    height: 70px
+  }
+  .first-table, .second-table{
+    text-align: left;
+    margin: 10px 10px;
+  }
+  .main-icon{
+    margin: auto;
+    margin-left: 24px;
+  }
+  .tables{
+    display: contents;
+    /* font-size: 14px; */
+  }
+
+  .tables span{
+      display: block;
+  }
+  .tables p{
+      color: #7760D5;
+      display: contents;
+  }
+  .head{
+    display: table-caption;
+    width: max-content;
+    margin: 18px 0 10px 10px;
+}
+  .first-table{
+      background-color: #fff;
+  }
+.second-table{
+    background-color: #fff;
+
+}
+.background-color-grey-icon{
+    background-color: #f3f1f1;
+    border-radius: 8px;
+    text-align: center;
+    display: block;
+    margin: 10px 0 0 10px;  
+    max-width: fit-content;
 }

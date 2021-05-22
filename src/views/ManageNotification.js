@@ -75,7 +75,7 @@ function ManageNotification() {
                                         <Col className="pr-1" md="6">
                                             <Form.Group controlId="exampleForm.ControlTextarea1">
                                                 <Form.Label>Your Message (max 30 words)</Form.Label>
-                                                <Form.Control as="textarea" rows={4}/>
+                                                <Form.Control className="text-area" as="textarea" rows={4}/>
                                             </Form.Group>
                                         </Col>
                                         <Col className="pr-1" md={{ span: 5, offset: 1 }}>
@@ -114,7 +114,7 @@ function ManageNotification() {
                                         <Col className="pr-1" md="6">
                                             <Form.Group controlId="formTitleInput">
                                                 <Form.Label>App link*</Form.Label>
-                                                <Form.Control type="text" placeholder="Enter App Link..."/>
+                                                <Form.Control className="text-area" type="text" placeholder="Enter App Link..."/>
                                             </Form.Group>
                                         </Col>
                                         <Col className="pr-1 button-container" md={{ span: 3, offset: 2 }}>
@@ -217,7 +217,7 @@ function ManageNotification() {
                                         <Col className="pr-1" md="6">
                                             <Form.Group controlId="formTitleInput">
                                                 <Form.Label>App link*</Form.Label>
-                                                <Form.Control type="text"
+                                                <Form.Control className="text-area" type="text"
                                                               value="App.d-event.io/dashboard/"
                                                               placeholder="Enter App Link..."/>
                                             </Form.Group>
