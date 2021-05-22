@@ -16,7 +16,7 @@ function ManageNotification() {
             <Container fluid>
                 <Row>
                     <Col>
-                        <h4 className="color-light-grey">Create New Notification Rule</h4>
+                        <h4 className="color-light-grey">Create Emailing Rules</h4>
                     </Col>
                 </Row>
                 <Row>
