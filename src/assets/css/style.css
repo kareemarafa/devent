@@ -64,7 +64,7 @@
 }
 
 .form-control {
-    background-color: #7760D5;
+    /*background-color: #7760D5;*/
 }
 
 .text-area {
@@ -74,8 +74,8 @@
 }
 
 .custom-select {
-    background-color: #7760D5;
-    color: #fff;
+    /*background-color: #7760D5;*/
+    /*color: #fff;*/
 }
 
 .card {
@@ -99,7 +99,6 @@
     font-size: 11px;
 }
 
-/**/
 .css-chart {
     display: inline-block;
     margin: 5em 15em 1em 5em;
@@ -147,7 +146,7 @@
 
 .nc-zoom-split {
     position: absolute;
-    right: 0px;
+    right: 0;
     top: 0;
     line-height: 2;
     font-size: 30px;
@@ -213,7 +212,6 @@
 
 .second-table {
     background-color: #fff;
-
 }
 
 .background-color-grey-icon {
@@ -223,4 +221,18 @@
     display: block;
     margin: 10px 0 0 10px;
     max-width: fit-content;
+}
+
+.card-sub-header {
+    padding: 15px 0 0 15px;
+}
+
+.card .card-header {
+    padding: 15px 0;
+}
+
+.form-footer {
+    padding: 20px 0;
+    display: flex;
+    justify-content: flex-end;
 }
