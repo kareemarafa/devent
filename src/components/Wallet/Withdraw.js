@@ -7,7 +7,7 @@ function Withdraw() {
             <Card className="pt-3 pb-4">
                 <Card.Body>
                     <Row>
-                        <Col md={6} lg={6} xl={3}>
+                        <Col md={6} lg={6} xl={4}>
                             <h5>Withdraw</h5>
                             <div className="d-flex flex-row justify-content-center align-items-center">
                                 <InputGroup className="mr-3">
@@ -23,7 +23,7 @@ function Withdraw() {
                                 <Button className="warning-solid-button" variant="warning">Withdraw</Button>
                             </div>
                         </Col>
-                        <Col md={6} lg={6} xl={3}>
+                        <Col md={6} lg={6} xl={4}>
                             <h5>Automatic Withdraw</h5>
                             <div className="d-flex flex-row justify-content-center align-items-center">
                                 <FormControl
