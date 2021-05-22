@@ -261,3 +261,14 @@
     justify-content: flex-start;
     align-items: center;
 }
+
+.button-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.warning-solid-button {
+    padding: 5px 10px;
+}
