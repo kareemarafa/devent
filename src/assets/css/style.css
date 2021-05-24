@@ -305,3 +305,23 @@
     background-color: #0000ff99;
     color: #fff;
 }
+
+.alert button.close {
+    color: #090909;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+}
+
+.text-success, .text-success:hover {
+    color: #27ae60!important;
+}
+
+.alert-success {
+    background-color: #27ae60 !important;
+}
+
+.text-bold {
+    font-weight: bold;
+}
