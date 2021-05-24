@@ -17,7 +17,7 @@ function EmailRuleForm() {
                                 <Row>
                                     <Col className="pr-1" md="2">
                                         <Form.Group controlId="formActionInput">
-                                            <Form.Label>Trigger Action*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">Trigger Action*</Form.Label>
                                             <Form.Control as="select" custom>
                                                 <option>Select</option>
                                             </Form.Control>
@@ -25,13 +25,13 @@ function EmailRuleForm() {
                                     </Col>
                                     <Col className="pr-1" md="6">
                                         <Form.Group controlId="formTitleInput">
-                                            <Form.Label>Email Title*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">Email Title*</Form.Label>
                                             <Form.Control type="text" placeholder="Title..."/>
                                         </Form.Group>
                                     </Col>
                                     <Col className="pr-1" md="2">
                                         <Form.Group controlId="formActionInput">
-                                            <Form.Label>User Type*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">User Type*</Form.Label>
                                             <Form.Control as="select" custom>
                                                 <option>Select</option>
                                             </Form.Control>
@@ -39,7 +39,7 @@ function EmailRuleForm() {
                                     </Col>
                                     <Col className="pr-3" md="2">
                                         <Form.Group controlId="formActionInput">
-                                            <Form.Label>Device*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">Device*</Form.Label>
                                             <Form.Control as="select" custom>
                                                 <option>Select</option>
                                             </Form.Control>
@@ -49,13 +49,13 @@ function EmailRuleForm() {
                                 <Row>
                                     <Col className="pr-1" md="6">
                                         <Form.Group controlId="exampleForm.ControlTextarea1">
-                                            <Form.Label>Your Message (max 30 words)</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">Your Message (max 30 words)</Form.Label>
                                             <Form.Control className="text-area" as="textarea" rows={4}/>
                                         </Form.Group>
                                     </Col>
                                     <Col className="pr-1" md={{ span: 5, offset: 1 }}>
                                         <Form.Group className="m-0">
-                                            <Form.Label>Trigger policy*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">Trigger policy*</Form.Label>
                                         </Form.Group>
                                         <div>
                                             <Form.Check
@@ -86,7 +86,7 @@ function EmailRuleForm() {
                                     </Col>
                                 </Row>
                                 <Row>
-                                    <Col className="pr-1 ml-auto button-container" md={{ span: 3, offset: 2 }}>
+                                    <Col className="pr-1 ml-auto button-container mb-3" md={{ span: 3, offset: 2 }}>
                                         <Button className="margin-right-2" variant="primary">
                                             Add Rule
                                             <i className="fas fa-plus"/>

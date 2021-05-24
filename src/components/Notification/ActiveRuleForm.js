@@ -18,7 +18,7 @@ function ActiveRuleForm() {
                                 <Row>
                                     <Col className="pr-1" md="2">
                                         <Form.Group controlId="formActionInput">
-                                            <Form.Label>Trigger Action*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">Trigger Action*</Form.Label>
                                             <Form.Control as="select" custom>
                                                 <option>Registration</option>
                                             </Form.Control>
@@ -26,7 +26,7 @@ function ActiveRuleForm() {
                                     </Col>
                                     <Col className="pr-1" md="4">
                                         <Form.Group controlId="formTitleInput">
-                                            <Form.Label>Notification Title*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">Notification Title*</Form.Label>
                                             <Form.Control type="text"
                                                           value="Welcome to d-event"
                                                           placeholder="Enter Title..."/>
@@ -34,7 +34,7 @@ function ActiveRuleForm() {
                                     </Col>
                                     <Col className="pr-1" md="2">
                                         <Form.Group controlId="formActionInput">
-                                            <Form.Label>User Type*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">User Type*</Form.Label>
                                             <Form.Control as="select" custom>
                                                 <option>All</option>
                                             </Form.Control>
@@ -42,7 +42,7 @@ function ActiveRuleForm() {
                                     </Col>
                                     <Col className="pr-1" md="2">
                                         <Form.Group controlId="formActionInput">
-                                            <Form.Label>Device*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">Device*</Form.Label>
                                             <Form.Control as="select" custom>
                                                 <option>All</option>
                                             </Form.Control>
@@ -50,7 +50,7 @@ function ActiveRuleForm() {
                                     </Col>
                                     <Col className="pr-1" md="2">
                                         <div className="switch-button padding-top-10">
-                                            <Form.Label>Push*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">Push*</Form.Label>
                                             <BootstrapSwitchButton
                                                 checked={true}
                                                 onlabel='On'
@@ -67,14 +67,14 @@ function ActiveRuleForm() {
                                 <Row>
                                     <Col className="pr-1" md="6">
                                         <Form.Group controlId="exampleForm.ControlTextarea1">
-                                            <Form.Label>Your Message (max 30 words)</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">Your Message (max 30 words)</Form.Label>
                                             <p className="text-secondary">You can browse for events and purchase
                                                 tickets!</p>
                                         </Form.Group>
                                     </Col>
                                     <Col className="pr-1" md={{span: 5, offset: 1}}>
                                         <Form.Group className="m-0">
-                                            <Form.Label>Trigger policy*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">Trigger policy*</Form.Label>
                                         </Form.Group>
                                         <div>
                                             <Form.Check
@@ -89,7 +89,7 @@ function ActiveRuleForm() {
                                 <Row>
                                     <Col className="pr-1" md="6">
                                         <Form.Group controlId="formTitleInput">
-                                            <Form.Label>App link*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">App link*</Form.Label>
                                             <Form.Control className="text-area" type="text"
                                                           value="App.d-event.io/dashboard/"
                                                           placeholder="Enter App Link..."/>
@@ -100,7 +100,7 @@ function ActiveRuleForm() {
                                             Edit Rule
                                             <i className="fas fa-pen margin-left-1"/>
                                         </Button>
-                                        <Button variant="danger"><i className="fas fa-trash-alt"/></Button>
+                                        <Button className="border-0" variant="danger"><i className="fas fa-trash-alt "/></Button>
                                     </Col>
                                 </Row>
                             </Form>

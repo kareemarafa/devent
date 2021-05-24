@@ -8,7 +8,7 @@ function Withdraw() {
                 <Card.Body>
                     <Row>
                         <Col md={6} lg={6} xl={4}>
-                            <h5>Withdraw</h5>
+                            <h5 className="color-light-grey font-weight-bold">Withdraw</h5>
                             <div className="d-flex flex-row justify-content-center align-items-center">
                                 <InputGroup className="mr-3">
                                     <FormControl
@@ -17,14 +17,14 @@ function Withdraw() {
                                         aria-describedby="basic-addon2"
                                     />
                                     <InputGroup.Append>
-                                        <InputGroup.Text id="basic-addon2">MAX</InputGroup.Text>
+                                        <InputGroup.Text id="basic-addon2" className="max text-light">MAX</InputGroup.Text>
                                     </InputGroup.Append>
                                 </InputGroup>
-                                <Button className="warning-solid-button" variant="warning">Withdraw</Button>
+                                <Button className="warning-solid-button bg-warning text-light" variant="warning">Withdraw</Button>
                             </div>
                         </Col>
                         <Col md={6} lg={6} xl={4}>
-                            <h5>Automatic Withdraw</h5>
+                            <h5 className="color-light-grey font-weight-bold">Automatic Withdraw</h5>
                             <div className="d-flex flex-row justify-content-center align-items-center">
                                 <FormControl
                                     className="mr-3"
@@ -32,7 +32,7 @@ function Withdraw() {
                                     aria-label="Withdraw threshold"
                                     aria-describedby="basic-addon2"
                                 />
-                                <Button className="warning-solid-button" variant="warning">Confirm</Button>
+                                <Button className="warning-solid-button bg-warning text-light" variant="warning">Confirm</Button>
                             </div>
                         </Col>
                     </Row>

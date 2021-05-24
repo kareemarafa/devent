@@ -1,0 +1,23 @@
+
+.main-card .manage-header{
+background-color: unset;
+color: #ffffff9c;
+
+}
+.thead-transactions{
+    border-top: 1px solid #44444445;
+    font-size: large;
+}
+.thead-transactions .th{
+    font-size: smaller;
+}
+.select-year{
+    max-width: fit-content;
+}
+/* .input{
+    background-color: black;
+}
+.text-area{
+    background-color: black;
+
+} */

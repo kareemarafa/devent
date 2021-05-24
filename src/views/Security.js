@@ -1,5 +1,5 @@
 import React from "react";
-import {Card, Col, Container, Form, Row} from "react-bootstrap";
+import { Card, Col, Container, Form, Row } from "react-bootstrap";
 import UserRow from "../components/User/UserRow";
 
 function Security() {
@@ -18,25 +18,24 @@ function Security() {
                             <Card.Body>
                                 <Form>
                                     <Row>
-                                        <Col className="pr-1" md="2">
+                                        <Col className="pr-1 ml-2" md="2">
                                             <Form.Group controlId="formTitleInput">
-                                                <Form.Label>Search User*</Form.Label>
+                                                <Form.Label className="text-dark font-weight-bold">Search User*</Form.Label>
                                                 <Form.Control type="text"
-                                                              placeholder="Search..."/>
+                                                    placeholder="Search..." />
                                             </Form.Group>
                                         </Col>
                                     </Row>
                                 </Form>
                                 <Row>
                                     <Col>
-                                        <h5 className="color-light-grey">User Details</h5>
+                                        <h5 className="text-dark font-weight-bold ml-2">User Details</h5>
                                     </Col>
                                 </Row>
                                 <UserRow />
-
                                 <Row className="mt-5">
                                     <Col>
-                                        <h5 className="color-light-grey">Edited pros</h5>
+                                        <h5 className="text-dark font-weight-bold ml-2">Edited pros</h5>
                                     </Col>
                                 </Row>
                                 <UserRow />

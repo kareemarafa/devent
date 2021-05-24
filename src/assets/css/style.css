@@ -17,7 +17,9 @@
 .color-light-grey {
     color: #888888
 }
-
+.max{
+    background-color: #7760D5;
+}
 
 .btn-primary {
     background-color: #7760D5;
@@ -84,6 +86,7 @@
 
 .card .card-body {
     display: contents;
+
 }
 
 .card .card-body .border-style {
@@ -271,4 +274,34 @@
 
 .warning-solid-button {
     padding: 5px 10px;
+}
+.balance-sheet{
+    font-size: 12px;
+    padding: 11px;
+    margin-top: -27px;
+}
+.header-transactions{
+    display: flex;
+    flex-direction: column;
+    line-height: 2;
+}
+.dropdown-menu{
+    display: contents;
+}
+.dropdown-button{
+    background-color: #fff;
+    width: 190px;
+}
+.dropdown-toggle::after{
+    margin-left: 30px
+}
+.search-filters{
+    position: relative;
+}
+.fa-search{
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    background-color: #0000ff99;
+    color: #fff;
 }

@@ -12,7 +12,7 @@ function ManageContent() {
         <>
             <Container fluid>
                 <Row>
-                    <Col md={{span: 6, offset: 3}}>
+                    <Col md={{ span: 6, offset: 3 }}>
                         <Card>
                             <Card.Header>
                                 <Card.Title as="h4">Account Settings</Card.Title>
@@ -31,14 +31,14 @@ function ManageContent() {
                                                             <Form.Group controlId="companyName">
                                                                 <Form.Label>Company Name</Form.Label>
                                                                 <Form.Control type="text"
-                                                                              placeholder="Enter company name here..."/>
+                                                                    placeholder="Enter company name here..." />
                                                             </Form.Group>
                                                         </Col>
                                                         <Col md="6">
                                                             <Form.Group controlId="vatNumber">
                                                                 <Form.Label>VAT number</Form.Label>
                                                                 <Form.Control type="text"
-                                                                              placeholder="Enter VAT number here..."/>
+                                                                    placeholder="Enter VAT number here..." />
                                                             </Form.Group>
                                                         </Col>
                                                     </Row>
@@ -47,14 +47,14 @@ function ManageContent() {
                                                             <Form.Group controlId="companyEmail">
                                                                 <Form.Label>Company Email</Form.Label>
                                                                 <Form.Control type="text"
-                                                                              placeholder="Enter Company Email here..."/>
+                                                                    placeholder="Enter Company Email here..." />
                                                             </Form.Group>
                                                         </Col>
                                                         <Col md="6">
                                                             <Form.Group controlId="companyPhoneNumber">
                                                                 <Form.Label>Phone number</Form.Label>
                                                                 <Form.Control type="text"
-                                                                              placeholder="Enter Phone number here..."/>
+                                                                    placeholder="Enter Phone number here..." />
                                                             </Form.Group>
                                                         </Col>
                                                     </Row>
@@ -74,7 +74,7 @@ function ManageContent() {
                                                             <Form.Group controlId="companyName">
                                                                 <Form.Label>Street</Form.Label>
                                                                 <Form.Control type="text"
-                                                                              placeholder="Enter Street details here..."/>
+                                                                    placeholder="Enter Street details here..." />
                                                             </Form.Group>
                                                             <Form.Group controlId="companyName">
                                                                 <Form.Label>Country</Form.Label>
@@ -87,12 +87,12 @@ function ManageContent() {
                                                             <Form.Group controlId="vatNumber">
                                                                 <Form.Label>Str. number</Form.Label>
                                                                 <Form.Control type="text"
-                                                                              placeholder="Enter VAT number here..."/>
+                                                                    placeholder="Enter VAT number here..." />
                                                             </Form.Group>
                                                             <Form.Group controlId="vatNumber">
                                                                 <Form.Label>Postal Code</Form.Label>
                                                                 <Form.Control type="text"
-                                                                              placeholder="Enter VAT number here..."/>
+                                                                    placeholder="Enter VAT number here..." />
                                                             </Form.Group>
                                                         </Col>
                                                     </Row>
@@ -114,7 +114,7 @@ function ManageContent() {
                                                                 <Form.Control as="select" custom>
                                                                     <option>Select</option>
                                                                 </Form.Control>
-                                                                </Form.Group>
+                                                            </Form.Group>
                                                         </Col>
                                                     </Row>
                                                 </Col>
@@ -133,14 +133,14 @@ function ManageContent() {
                                                             <Form.Group controlId="companyName">
                                                                 <Form.Label>IBAN</Form.Label>
                                                                 <Form.Control type="text"
-                                                                              placeholder="Enter IBAN here..."/>
+                                                                    placeholder="Enter IBAN here..." />
                                                             </Form.Group>
                                                         </Col>
                                                         <Col md="6">
                                                             <Form.Group controlId="vatNumber">
                                                                 <Form.Label>BIC</Form.Label>
                                                                 <Form.Control type="text"
-                                                                              placeholder="Enter BIC here..."/>
+                                                                    placeholder="Enter BIC here..." />
                                                             </Form.Group>
                                                         </Col>
                                                     </Row>

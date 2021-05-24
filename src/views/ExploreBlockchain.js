@@ -1,6 +1,6 @@
 import React from "react";
 import ChartistGraph from "react-chartist";
-
+import Dropdown from 'react-bootstrap/Dropdown'
 import {
     Card,
     Form,
@@ -27,7 +27,7 @@ function ExploreBlockchain() {
                                             </Col>
                                             <Col className="margin-top-2 first-table">
                                                 <small className="muted ">ETHER PRICE</small>
-                                                <p className="text">$1,7.40 @ 0.01 BTC<span
+                                                <p className="text">$1,7.40 @<span
                                                 >(-2.07%)</span></p>
                                             </Col>
                                         </Row>
@@ -45,7 +45,7 @@ function ExploreBlockchain() {
                                 </Card>
                             </Col>
                             <Col md="6" className="pl-0 pr-0">
-                                <Card>
+                                <Card >
                                     <Card.Body>
                                         <Row>
                                             <Col md="0" className="main-icon margin-top-4 margin-left-2">
@@ -110,12 +110,15 @@ function ExploreBlockchain() {
                         <Form>
                             <Form.Group>
                                 <Form.Row>
-                                    <Form.Label className="all-filters" column="lg" lg={2}>
-                                        AllFilters
-                                    </Form.Label>
-                                    <Col>
-                                        <Form.Control className="input-search" size="lg" type="text"
+                                    <Dropdown className="d-flex bg-light">
+                                            <Dropdown.Toggle className="dropdown-button border-0  text-dark p-3 btn btn-light">
+                                                All Filters
+                                            </Dropdown.Toggle>
+                                        </Dropdown>
+                                    <Col className="search-filters">
+                                        <Form.Control className="input-search " size="lg" type="text"
                                             placeholder="Search by Address/ Txn Hash/Block/Token/Ens" />
+                                            <i class="fas fa-search"></i>
                                     </Col>
                                 </Form.Row>
                             </Form.Group>

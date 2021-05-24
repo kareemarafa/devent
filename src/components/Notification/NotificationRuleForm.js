@@ -18,7 +18,7 @@ function NotificationRuleForm() {
                                 <Row>
                                     <Col className="pr-1" md="2">
                                         <Form.Group controlId="formActionInput">
-                                            <Form.Label>Trigger Action*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">Trigger Action*</Form.Label>
                                             <Form.Control as="select" custom>
                                                 <option>Select</option>
                                             </Form.Control>
@@ -26,13 +26,13 @@ function NotificationRuleForm() {
                                     </Col>
                                     <Col className="pr-1" md="4">
                                         <Form.Group controlId="formTitleInput">
-                                            <Form.Label>Title*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">Title*</Form.Label>
                                             <Form.Control type="text" placeholder="Enter Title..."/>
                                         </Form.Group>
                                     </Col>
                                     <Col className="pr-1" md="2">
                                         <Form.Group controlId="formActionInput">
-                                            <Form.Label>User Type*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">User Type*</Form.Label>
                                             <Form.Control as="select" custom>
                                                 <option>Select</option>
                                             </Form.Control>
@@ -40,7 +40,7 @@ function NotificationRuleForm() {
                                     </Col>
                                     <Col className="pr-1" md="2">
                                         <Form.Group controlId="formActionInput">
-                                            <Form.Label>Device*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">Device*</Form.Label>
                                             <Form.Control as="select" custom>
                                                 <option>Select</option>
                                             </Form.Control>
@@ -48,7 +48,7 @@ function NotificationRuleForm() {
                                     </Col>
                                     <Col className="pr-1" md="2">
                                         <div className="switch-button padding-top-10">
-                                            <Form.Label>Push*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">Push*</Form.Label>
                                             <BootstrapSwitchButton
                                                 checked={true}
                                                 onlabel='On'
@@ -65,13 +65,13 @@ function NotificationRuleForm() {
                                 <Row>
                                     <Col className="pr-1" md="6">
                                         <Form.Group controlId="exampleForm.ControlTextarea1">
-                                            <Form.Label>Your Message (max 30 words)</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">Your Message (max 30 words)</Form.Label>
                                             <Form.Control className="text-area" as="textarea" rows={4}/>
                                         </Form.Group>
                                     </Col>
                                     <Col className="pr-1" md={{ span: 5, offset: 1 }}>
                                         <Form.Group className="m-0">
-                                            <Form.Label>Trigger policy*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">Trigger policy*</Form.Label>
                                         </Form.Group>
                                         <div>
                                             <Form.Check
@@ -104,7 +104,7 @@ function NotificationRuleForm() {
                                 <Row>
                                     <Col className="pr-1" md="6">
                                         <Form.Group controlId="formTitleInput">
-                                            <Form.Label>App link*</Form.Label>
+                                            <Form.Label className="text-dark font-weight-bold">App link*</Form.Label>
                                             <Form.Control className="text-area" type="text" placeholder="Enter App Link..."/>
                                         </Form.Group>
                                     </Col>
