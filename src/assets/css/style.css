@@ -383,3 +383,46 @@
     background: #f6cd00;
     color: #333;
 }
+
+.pointer {
+    width: 70px;
+    height: 40px;
+    position: absolute;
+    background: #F1F2F4;
+    z-index: 1 !important;
+}
+.pointer:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid white;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+.pointer:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid #F1F2F4;
+    border-top: 20px solid #F1F2F4;
+    border-bottom: 20px solid #F1F2F4;
+    border-radius: 0 10px 10px 0;
+}
+
+.td-text {
+    position: relative;
+    z-index: 9;
+    left: 15px;
+}
+
+.shape-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
