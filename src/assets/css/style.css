@@ -17,7 +17,8 @@
 .color-light-grey {
     color: #888888
 }
-.max{
+
+.max {
     background-color: #7760D5;
 }
 
@@ -131,12 +132,6 @@
     height: 3px;
     position: absolute;
     transform-origin: left bottom;
-}
-
-.btn-light {
-    background-color: #fff !important;
-    border: none !important;
-    padding: 20px;
 }
 
 .search {
@@ -274,39 +269,40 @@
 .warning-solid-button {
     padding: 5px 10px;
 }
-.balance-sheet{
+
+.balance-sheet {
     font-size: 12px;
     padding: 9px;
     margin-top: -27px;
 }
-.header-transactions{
+
+.header-transactions {
     display: flex;
     flex-direction: column;
     line-height: 2;
 }
-.dropdown-menu{
+
+.dropdown-menu {
     display: contents;
 }
-.dropdown-button{
+
+.dropdown-button {
     background-color: #fff;
     width: 190px;
 }
-.dropdown-toggle::after{
+
+.dropdown-toggle::after {
     margin-left: 30px
 }
-.search-filters{
+
+.search-filters {
     position: relative;
 }
-.fa-search{
-    position: absolute;
-    right: 6px;
-    top: 0;
-    line-height: 3;
-    font-size: 24px;
-    background: #007eff82;
-    width: 60px;
-    text-align: center;
+
+.search-button {
+    background: #673ab7;
     color: #fff;
+    border: none;
 }
 
 .alert button.close {
@@ -318,7 +314,7 @@
 }
 
 .text-success, .text-success:hover {
-    color: #27ae60!important;
+    color: #27ae60 !important;
 }
 
 .alert-success {
@@ -344,12 +340,12 @@
 }
 
 .border-bottom {
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .border-right {
     padding-right: 15px;
-    border-right: 1px solid rgba(0,0,0,0.2);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .small-font-size {
@@ -363,6 +359,7 @@
 .height-half {
     height: 70px;
 }
+
 .height-full {
     height: 140px;
 }
@@ -373,4 +370,16 @@
 
 .text-uppercase {
     text-transform: uppercase;
+}
+
+.dropdown-button.filter, .dropdown-button.filter.btn-primary {
+    height: 40px;
+    background: #ffd60a;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown-button.filter:focus, .dropdown-button.filter:hover,
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background: #f6cd00;
+    color: #333;
 }

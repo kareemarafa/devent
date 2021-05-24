@@ -6,7 +6,7 @@ import {
     Form,
     Container,
     Row,
-    Col,
+    Col, InputGroup, FormControl, Button,
 } from "react-bootstrap";
 import Table from 'react-bootstrap/Table'
 import '../assets/css/style.css';
@@ -20,7 +20,8 @@ function ExploreBlockchain() {
                         <Row>
                             <Col xl={4} lg={4} md={12} sm={12} xs={12} className="p-0 m-0">
                                 <div className="light-background">
-                                    <div className="height-half border-right d-flex flex-row align-items-center border-bottom">
+                                    <div
+                                        className="height-half border-right d-flex flex-row align-items-center border-bottom">
                                         <div className="main-icon mx-2">
                                             <i className="nc-icon nc-chart-pie-35"/>
                                         </div>
@@ -51,9 +52,11 @@ function ExploreBlockchain() {
                                             <p>994.54 M <span className="blue-grey-color">(16.8 TPS)</span></p>
                                         </div>
                                     </div>
-                                    <div className="w-50 d-flex flex-row align-items-center justify-content-end mr-2 border-bottom">
+                                    <div
+                                        className="w-50 d-flex flex-row align-items-center justify-content-end mr-2 border-bottom">
                                         <div className="margin-top-2 first-table">
-                                            <small className="muted text-uppercase blue-grey-color">Med Gas Price</small>
+                                            <small className="muted text-uppercase blue-grey-color">Med Gas
+                                                Price</small>
                                             <p>161 Gwei <span className="blue-grey-color">($4.49)</span></p>
                                         </div>
                                     </div>
@@ -68,7 +71,8 @@ function ExploreBlockchain() {
                                             <p>4,592.32 TH</p>
                                         </div>
                                     </div>
-                                    <div className="w-50 d-flex flex-row align-items-center justify-content-end mr-2 border-bottom">
+                                    <div
+                                        className="w-50 d-flex flex-row align-items-center justify-content-end mr-2 border-bottom">
                                         <div className="margin-top-2 first-table">
                                             <small className="muted text-uppercase blue-grey-color">Hash Rate</small>
                                             <p>364,733.75 GH/s</p>
@@ -81,9 +85,12 @@ function ExploreBlockchain() {
                                     <Card.Body>
                                         <Row className="custom-chart">
                                             <ChartistGraph
-                                                data={{labels: ['Jan 17', 'Jan 24', 'Jan 31', 'Jan 17', 'Jan 24', 'Jan 31'], series: [
-                                                    [500, 200, 1200, 1300, 1000, 1400]
-                                                    ]}}
+                                                data={{
+                                                    labels: ['Jan 17', 'Jan 24', 'Jan 31', 'Jan 17', 'Jan 24', 'Jan 31'],
+                                                    series: [
+                                                        [500, 200, 1200, 1300, 1000, 1400]
+                                                    ]
+                                                }}
                                                 type="Line"
                                                 options={{fullWidth: true, height: "120px", low: 0, showArea: false}}
                                             />
@@ -99,14 +106,23 @@ function ExploreBlockchain() {
                                 <Form.Row>
                                     <Dropdown className="d-flex bg-light">
                                         <Dropdown.Toggle
-                                            className="dropdown-button border-0  text-dark p-3 btn btn-light">
+                                            className="dropdown-button filter border-0 text-dark btn">
                                             All Filters
                                         </Dropdown.Toggle>
                                     </Dropdown>
                                     <Col className="search-filters">
-                                        <Form.Control className="input-search " size="lg" type="text"
-                                                      placeholder="Search by Address/ Txn Hash/Block/Token/Ens"/>
-                                        <i class="fas fa-search"></i>
+                                        <InputGroup className="mb-3">
+                                            <FormControl
+                                                placeholder="Search by Address/ Txn Hash/Block/Token/Ens"
+                                                aria-label="Search by Address/ Txn Hash/Block/Token/Ens"
+                                                aria-describedby="basic-addon2"
+                                            />
+                                            <InputGroup.Append>
+                                                <Button variant="primary" className="search-button">
+                                                    <i className="fas fa-search" />
+                                                </Button>
+                                            </InputGroup.Append>
+                                        </InputGroup>
                                     </Col>
                                 </Form.Row>
                             </Form.Group>
