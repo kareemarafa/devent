@@ -26,20 +26,14 @@ function AdminWallet() {
                             </Card.Body>
                         </Card>
                     </Col>
-                    <Col md="12">
-                        <Card className="pt-4">
-                            <Card.Body>
-                                <Withdraw/>
-                                <WalletTransactions/>
-                            </Card.Body>
-                        </Card>
+                    <Col>
+                        <Withdraw/>
                     </Col>
                     <Col md="12">
-                        <Card className="pt-4">
-                            <Card.Body>
-                                <TransactionsForm/>
-                            </Card.Body>
-                        </Card>
+                        <TransactionsForm/>
+                    </Col>
+                    <Col md="12">
+                        <WalletTransactions/>
                     </Col>
                 </Row>
             </Container>

@@ -267,9 +267,9 @@
 
 .button-col {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    left: 15px;
 }
 
 .warning-solid-button {
@@ -277,7 +277,7 @@
 }
 .balance-sheet{
     font-size: 12px;
-    padding: 11px;
+    padding: 9px;
     margin-top: -27px;
 }
 .header-transactions{

@@ -34,7 +34,7 @@ function Summary() {
                                     <Row>
                                         <Col className="pr-1">
                                             <p className="d-inline-block mb-2 text-light-grey text-bold">Balance
-                                                chart</p>
+                                                Chart</p>
                                         </Col>
                                         <Col className="pr-1">
                                                     <span className="mb-0 text-light-grey text-bold">
