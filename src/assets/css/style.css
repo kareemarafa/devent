@@ -179,11 +179,10 @@
 
 .first-table, .second-table {
     text-align: left;
-    margin: 10px 10px;
 }
 
 .main-icon {
-    width: 50px;
+    width: 20px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -324,4 +323,50 @@
 
 .text-bold {
     font-weight: bold;
+}
+
+.custom-chart .ct-chart {
+    height: auto;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.custom-chart .ct-label {
+    font-size: 12px !important;
+}
+
+.light-background {
+    background: white;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.border-right {
+    padding-right: 15px;
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+.small-font-size {
+    font-size: 12px;
+}
+
+.small-font-size p {
+    font-size: 14px;
+}
+
+.height-half {
+    height: 70px;
+}
+.height-full {
+    height: 140px;
+}
+
+.blue-grey-color {
+    color: #77838F;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }
