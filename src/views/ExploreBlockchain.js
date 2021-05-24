@@ -115,7 +115,7 @@ function ExploreBlockchain() {
                                                 All Filters
                                             </Dropdown.Toggle>
                                         </Dropdown>
-                                    <Col className="search-filters">
+                                    <Col className="search-filters pl-0">
                                         <Form.Control className="input-search " size="lg" type="text"
                                             placeholder="Search by Address/ Txn Hash/Block/Token/Ens" />
                                             <i class="fas fa-search"></i>
