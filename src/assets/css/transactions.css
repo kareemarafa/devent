@@ -1,23 +1,26 @@
 
-.main-card .manage-header{
-background-color: unset;
-color: #ffffff9c;
+.main-card .manage-header {
 
 }
-.thead-transactions{
-    border-top: 1px solid #44444445;
+
+.thead-transactions {
+    border-top: 1px solid #dee2e6;
     font-size: large;
 }
-.thead-transactions .th{
+
+.thead-transactions .th {
     font-size: smaller;
 }
-.select-year{
+
+.select-year {
     max-width: fit-content;
 }
-/* .input{
-    background-color: black;
-}
-.text-area{
-    background-color: black;
 
-} */
+.nav.card-header-tabs.nav-tabs {
+    display: none;
+}
+
+button:focus:not(:focus-visible) {
+    background: #6a59b0;
+    color: white;
+}

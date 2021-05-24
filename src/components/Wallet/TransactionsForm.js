@@ -1,38 +1,83 @@
-import React from "react";
-import { Button, Card, Col, Form, Row, Table } from "react-bootstrap";
+import React, {useState} from "react";
+import {Button, Card, Col, Form, Row, Tab, Tabs} from "react-bootstrap";
 import "../../assets/css/transactions.css"
+
 function TransactionsForm() {
+    const [key, setKey] = useState('send');
     return (
         <>
-            <Row>
-                <Col md="12">
-                    <Card className="main-card border-0" bg="dark">
-                        <Card.Header className="manage-header p-3 mb-3 mt-2 text-light" as="h5">Manage Transactions</Card.Header>
+
+            <Card className="main-card">
+                <Card.Header className="manage-header py-3">
+                    <Card.Title>
+                        <h5>Manage Transactions</h5>
+                    </Card.Title>
+                </Card.Header>
+                <Card.Body>
+                    <Row>
                         <Col md="6">
-                            <Button className="mr-3  border-0 mb-4 bg-dark" >Send money</Button>
-                            <Button className="btn btn-dark receive-money mb-4 text-light">Receive money</Button>
-                        </Col>
-                        <Form>
-                            <Form.Group controlId="formBasicEmail">
-                            <Form.Text className="mb-2 text-light">
-                            Send an invitation to pay
-                                </Form.Text>
-                                <Form.Control className="input border-0 mt-2" type="text" placeholder="Search user" />
-                              
-                            </Form.Group>
-                            <Form.Group controlId="formBasicPassword">
-                                <Form.Control className="input border-0 mt-4" type="text" placeholder="Amount" />
-                            </Form.Group>
-                            <Form.Group controlId="exampleForm.ControlTextarea1">
-                                <Form.Control className="text-area border-0 mt-4" placeholder="communication"  as="textarea" rows={6} />
-                            </Form.Group>
-                            <Button variant="warning bg-warning text-dark mt-3 mb-4" type="submit">
-                                Send request
+                            <Button onClick={() => setKey('send')} className="mr-3 border-0 mb-4">
+                                Send Money
                             </Button>
-                        </Form>
-                    </Card>
-                </Col>
-            </Row>
+                            <Button onClick={() => setKey('receive')} className="btn receive-money mb-4">
+                                Receive Money</Button>
+                        </Col>
+                    </Row>
+                    <Tabs activeKey={key}>
+                        <Tab eventKey="send" title="Send">
+                            <Row>
+                                <Col>
+                                    <Form>
+                                        <Row>
+                                            <Col>
+                                                <Form.Group controlId="formBasicEmail">
+                                                    <Form.Text className="mb-2">
+                                                        <span className="text-bold">Send an Invitation to Pay</span>
+                                                    </Form.Text>
+                                                    <Form.Label>Search User</Form.Label>
+                                                    <Form.Control className="input " type="text"
+                                                                  placeholder="Enter search keyword..."/>
+                                                </Form.Group>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                <Form.Group controlId="formBasicPassword">
+                                                    <Form.Label>Amount</Form.Label>
+                                                    <Form.Control className="input " type="text"
+                                                                  placeholder="Enter Amount here..."/>
+                                                </Form.Group>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                <Form.Group controlId="exampleForm.ControlTextarea1">
+                                                    <Form.Label>Communication</Form.Label>
+                                                    <Form.Control className="text-area "
+                                                                  placeholder="Enter your message here..."
+                                                                  as="textarea"
+                                                                  rows={6}/>
+                                                </Form.Group>
+                                            </Col>
+                                        </Row>
+                                        <Row>
+                                            <Col>
+                                                <Button variant="warning bg-warning text-dark mt-3 mb-4" type="submit">
+                                                    Send request
+                                                </Button>
+                                            </Col>
+                                        </Row>
+                                    </Form>
+                                </Col>
+                            </Row>
+                        </Tab>
+                        <Tab eventKey="receive" title="Receive">
+                            <h4>In Progress</h4>
+                        </Tab>
+                    </Tabs>
+                </Card.Body>
+            </Card>
+
         </>
     )
 }

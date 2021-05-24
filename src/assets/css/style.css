@@ -179,11 +179,10 @@
 
 .first-table, .second-table {
     text-align: left;
-    margin: 10px 10px;
 }
 
 .main-icon {
-    width: 50px;
+    width: 20px;
     height: auto;
     display: flex;
     justify-content: center;
@@ -267,9 +266,9 @@
 
 .button-col {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    left: 15px;
 }
 
 .warning-solid-button {
@@ -277,7 +276,7 @@
 }
 .balance-sheet{
     font-size: 12px;
-    padding: 11px;
+    padding: 9px;
     margin-top: -27px;
 }
 .header-transactions{
@@ -308,6 +307,70 @@
     width: 60px;
     text-align: center;
     color: #fff;
+}
+
+.alert button.close {
+    color: #090909;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+}
+
+.text-success, .text-success:hover {
+    color: #27ae60!important;
+}
+
+.alert-success {
+    background-color: #27ae60 !important;
+}
+
+.text-bold {
     font-weight: bold;
-    height: 100%
+}
+
+.custom-chart .ct-chart {
+    height: auto;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.custom-chart .ct-label {
+    font-size: 12px !important;
+}
+
+.light-background {
+    background: white;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.border-right {
+    padding-right: 15px;
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+.small-font-size {
+    font-size: 12px;
+}
+
+.small-font-size p {
+    font-size: 14px;
+}
+
+.height-half {
+    height: 70px;
+}
+.height-full {
+    height: 140px;
+}
+
+.blue-grey-color {
+    color: #77838F;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
 }
