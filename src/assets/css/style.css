@@ -426,3 +426,12 @@
     justify-content: center;
     align-items: center;
 }
+
+.dropdown-menu {
+    display: none !important;
+}
+
+.dropdown-menu.show {
+    flex-direction: column;
+    display: flex !important;
+}

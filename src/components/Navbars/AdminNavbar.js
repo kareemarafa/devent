@@ -63,18 +63,12 @@ function Header() {
               </Nav.Link>
             </Nav.Item>
             <Dropdown as={Nav.Item}>
-              <Dropdown.Toggle
-                as={Nav.Link}
-                data-toggle="dropdown"
-                id="dropdown-67443507"
-                variant="default"
-                className="m-0"
-              >
-                <i className="nc-icon nc-planet"/>
-                <span className="notification">5</span>
-                <span className="d-lg-none ml-1">Notification</span>
+              <Dropdown.Toggle as={Nav.Link} data-toggle="dropdown" id="dropdown-67443507" variant="default" className="m-0">
+                  <i className="nc-icon nc-planet"/>
+                  <span className="notification">5</span>
+                  <span className="d-lg-none ml-1">Notification</span>
               </Dropdown.Toggle>
-              <Dropdown.Menu className="d-flex flex-column">
+              <Dropdown.Menu>
                 <Dropdown.Item
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
@@ -111,7 +105,7 @@ function Header() {
               >
                 Select Event
               </Dropdown.Toggle>
-              <Dropdown.Menu className="d-flex flex-column">
+              <Dropdown.Menu>
                 <Dropdown.Item
                     href="#pablo"
                     onClick={(e) => e.preventDefault()}
