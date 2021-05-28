@@ -74,7 +74,8 @@ function Header() {
                 <span className="notification">5</span>
                 <span className="d-lg-none ml-1">Notification</span>
               </Dropdown.Toggle>
-              <Dropdown.Menu>
+              <Dropdown.Menu className="d-flex flex-column">
+
                 <Dropdown.Item
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
@@ -117,7 +118,7 @@ function Header() {
               >
                 Select Event
               </Dropdown.Toggle>
-              <Dropdown.Menu>
+              <Dropdown.Menu className="d-flex flex-column">
                 <Dropdown.Item
                     href="#pablo"
                     onClick={(e) => e.preventDefault()}
